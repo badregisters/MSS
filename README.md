@@ -58,9 +58,9 @@
 
 每个地区组为两层 `fallback`：`优选`（`premium` 标签机场）健康检查失败才自动降级到 `标准`（`standard` 标签机场）。机场分层由 `secrets.yaml` 的 `groups` 字段声明，不做实时质量探测。
 
-| 🇭🇰 香港 | 🇹🇼 台湾 | 🇯🇵 日本 | 🇰🇷 韩国 | 🇸🇬 狮城 | 🇺🇸 美国 | 🇬🇧 英国 | 🇲🇾 马来 | 🇺🇳 小众 |
-|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
-| fallback | fallback | fallback | fallback | fallback | fallback | fallback | fallback | select |
+| 🇭🇰 香港 | 🇹🇼 台湾 | 🇯🇵 日本 | 🇸🇬 狮城 | 🇺🇸 美国 | 🇬🇧 英国 | 🇲🇾 马来 | 🇺🇳 小众 |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| fallback | fallback | fallback | fallback | fallback | fallback | fallback | select |
 
 ### 服务
 
