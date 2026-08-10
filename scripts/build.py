@@ -43,7 +43,7 @@ PROJECT_URL = 'https://github.com/badregisters/UniFOM'
 # Default filter applied to all proxy providers
 PROVIDER_FILTER = (
     r'(?i)(香港|🇭🇰|HK|美国|🇺🇸|\bUS\b|日本|🇯🇵|JP|'
-    r'台湾|🇹🇼|TW|Taiwan|新加坡|狮城|🇸🇬|SG|英国|🇬🇧|UK|马来|🇲🇾|MY|'
+    r'台湾|🇹🇼|TW|Taiwan|新加坡|狮城|🇸🇬|SG|英国|🇬🇧|UK|'
     r'喀麦隆|冰岛|土耳其|阿根廷|印度|🇮🇳|India)'
 )
 
