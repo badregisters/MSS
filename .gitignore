@@ -17,3 +17,8 @@ clash/stash/dist/
 
 # Claude Code 内部目录
 .claude/
+
+# 排查过程中的截图/抓包等原始材料（可能含节点出口 IP 等信息）
+research/*.pdf
+research/*.png
+research/*.jpg
