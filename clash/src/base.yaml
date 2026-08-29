@@ -194,6 +194,8 @@ rules:
   - DOMAIN-SUFFIX,hoyoverse.com,🎮 游戏平台
   - DOMAIN-SUFFIX,hoyolab.com,🎮 游戏平台
   - DOMAIN-SUFFIX,cognosphere.com,🎮 游戏平台
+  # yuanshen.com 被 GEOSITE:cn 误判为大陆域名, 但 dispatchosglobal 是国际服分发服务器, 需提前排除
+  - DOMAIN-KEYWORD,osglobal,🎮 游戏平台
   # Tencent overseas infra (CODM, PUBGM, Nikke auth and anti-cheat)
   - DOMAIN-SUFFIX,proximabeta.com,🎮 游戏平台
   - DOMAIN-SUFFIX,gcloudcs.com,🎮 游戏平台
