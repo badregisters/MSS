@@ -44,11 +44,6 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
-  # 排除 0.0.0.0/31 使 iOS 不按"全量隧道"处理，从而隐藏状态栏 VPN 图标
-  # 仅对 iOS 端 mihomo 客户端(Clash Mi 等)有意义；
-  # 路由器 OpenClash 上 tun 段由 GUI 接管重写，此项不生效也无副作用
-  route-exclude-address:
-    - 0.0.0.0/31
 
 geo-auto-update: true
 geo-update-interval: 24
