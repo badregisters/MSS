@@ -44,19 +44,6 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
-  # 隐藏 iOS 状态栏 VPN 图标。iOS 客户端(Clash by Hako / sing-box 系)把本字段
-  # 透传为 NEPacketTunnelNetworkSettings 的 ipv4Settings.excludedRoutes；
-  # 存在排除路由时系统不按全量隧道处理, 角标不显示。
-  # 参考实现: SagerNet/sing-box-for-apple
-  #   Library/Network/ExtensionPlatformInterface.swift 中 excludeDefaultRoute 分支,
-  #   append NEIPv4Route(destinationAddress:"0.0.0.0", subnetMask:"255.255.255.254")
-  #   —— 即本行的 0.0.0.0/31, 与 Shadowrocket "Exclude Routes 0.0.0.0/31" 开关同源。
-  # 透传链路: TokenPLS/Hako bind/hako/tun.go GetInet4RouteExcludeAddress()
-  # 注意: 本字段属 tunRestartIntent(bind/hako/config_api.go), 改动后必须完整
-  #       断开重连 VPN 才会重新下发网络设置, 仅刷新订阅不生效。
-  # 路由器侧: 0.0.0.0/31 仅含 0.0.0.0 与 0.0.0.1 两个保留地址, 无真实流量, 无影响。
-  route-exclude-address:
-    - 0.0.0.0/31
 
 geo-auto-update: true
 geo-update-interval: 24
