@@ -283,23 +283,23 @@ rules:
   - GEOSITE,openai,🧠 AI 服务 # OpenAI / ChatGPT
   - RULE-SET,AI,🧠 AI 服务 # ACL4SSR AI 规则集(补充 Claude, Gemini 等)
   - GEOSITE,apple,🍎 苹果服务 # Apple 全域名(App Store, iCloud, Siri 等)
-  - GEOSITE,microsoft,🪟 微软服务 # Microsoft 全域名
   - GEOSITE,onedrive,☁️ 微软云盘 # OneDrive 专项(从 microsoft 集合中独立)
+  - GEOSITE,microsoft,🪟 微软服务 # Microsoft 全域名
   - GEOSITE,tiktok,📱 TikTok # TikTok 国际版
   - GEOSITE,youtube,▶️ 油管视频 # YouTube + Google Video
   - GEOSITE,netflix,🎥 奈飞视频 # Netflix
   - GEOSITE,spotify,🎧 Spotify # Spotify
   - GEOSITE,epicgames,🎮 游戏平台 # Epic Games Store
+  - GEOSITE,steam@cn,🎯 全球直连 # Steam 中国区 CDN, 直连提速
   - GEOSITE,steam,🎮 游戏平台 # Steam(含 CDN 域名)
   - RULE-SET,Speedtest,🚄 Speedtest # 测速服务(Ookla Speedtest / Fast.com 等)
   - RULE-SET,ProxyMedia,🌍 国外媒体 # ACL4SSR 国外流媒体规则集(非上述专项)
-  - RULE-SET,ProxyGFWlist,🚀 节点选择 # Loyalsoldier GFW 被封域名列表
   - GEOSITE,bahamut,📺 巴哈姆特 # 巴哈姆特动画疯(锁台湾 IP, 走台湾节点)
+  - RULE-SET,ProxyGFWlist,🚀 节点选择 # Loyalsoldier GFW 被封域名列表
   - GEOSITE,bilibili,📺 哔哩哔哩 # 哔哩哔哩(含港澳台域名)
   - RULE-SET,ChinaMedia,🌏 国内媒体 # 国内流媒体(爱奇艺, 优酷, 芒果等)
   - RULE-SET,NetEaseMusic,🎶 网易音乐 # 网易云音乐(版权歌曲解锁需配合节点)
   - GEOSITE,google-cn,🎯 全球直连 # Google 在中国大陆提供服务的域名(dl.google.com 等)
-  - GEOSITE,steam@cn,🎯 全球直连 # Steam 中国区 CDN, 直连提速
   - RULE-SET,Download,🎯 全球直连 # 下载类域名(软件更新, 镜像站等), 直连节省流量
   - GEOSITE,category-ads-all,🛑 广告拦截 # v2fly 广告域名集合
 
